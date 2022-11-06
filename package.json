@@ -1,8 +1,19 @@
 {
-  "name": "a02",
+  "name": "a02-nicwjh",
   "version": "1.0.0",
-  "description": "This assignment will help you learn to create an installable Node.js command line utility.",
-  "main": "index.js",
+  "description": "This assignment creates an installable Node.js command line package.",
+  "main": "cli.js",
+  "dependencies": {
+    "data-uri-to-buffer": "^4.0.0",
+    "fetch-blob": "^3.2.0",
+    "formdata-polyfill": "^4.0.10",
+    "minimist": "^1.2.7",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.38",
+    "node-domexception": "^1.0.0",
+    "node-fetch": "^3.2.10",
+    "web-streams-polyfill": "^3.2.1"
+  },
   "scripts": {
     "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
   },
@@ -10,19 +21,14 @@
     "type": "git",
     "url": "git+https://github.com/comp426-2022-fall/a02-nicwjh.git"
   },
-  "author": "nicholas",
+  "bin":{
+    "galosh.js": "./cli.js"
+  },
+  "type": "module",
+  "author": "@nicwjh",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/comp426-2022-fall/a02-nicwjh/issues"
   },
-  "homepage": "https://github.com/comp426-2022-fall/a02-nicwjh#readme",
-  "dependencies": {
-    "minimist": "^1.2.6",
-    "moment-timezone": "^0.5.37",
-    "node-fetch": "^3.2.10"
-  }
-  "bin": {
-    "galosh.js": "./cli.js"
-  },
-  "type": "module",
+  "homepage": "https://github.com/comp426-2022-fall/a02-nicwjh#readme"
 }
