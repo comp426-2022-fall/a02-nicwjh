@@ -25,15 +25,15 @@ console.log(`Usage: galosh.js [options] -[n|s] LATITUDE -[e|w] LONGITUDE -z TIME
 process.exit(0)
 }
 
-
-let latitude = '35.90'
-let longitude = '-79.05' 
+console.log(args.n)
+let latitude = args.n
+let longitude = args.w 
 
 const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + latitude + '&longitude=' + longitude + '&hourly=temperature_2m,relativehumidity_2m,precipitation,surface_pressure&current_weather=true&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timezone=America%2FNew_York&past_days=7');
 
 const data = await response.json();
 
-console.log(data);
+//console.log(data);
 
 const days = args.d
 
