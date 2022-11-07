@@ -34,8 +34,8 @@ console.log(latitude)
 console.log(longitude)
 
 if(args.j){
-latitude = 35
-longitude = 79
+console.log("Latitude must be in range")
+process.exit(0)
 }
 
 const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + latitude + '&longitude=' + longitude + '&hourly=temperature_2m,relativehumidity_2m,precipitation,surface_pressure&current_weather=true&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timezone=America%2FNew_York&past_days=7');
@@ -45,9 +45,6 @@ const data = await response.json();
 console.log(data);
 console.log(data.precipitation);
 
-if(args.j){
-console.log("Latitude must be in range")
-}
 
 const days = args.d
 
