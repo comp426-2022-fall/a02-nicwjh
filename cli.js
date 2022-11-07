@@ -2,7 +2,7 @@
 
 //Dependencies 
 
-import moment from 'moment-timezone';
+import moment from 'moment';
 import fetch from 'node-fetch';
 import minimist from 'minimist'; 
 //const timezone = moment.tz.guest()
@@ -28,6 +28,8 @@ process.exit(0)
 console.log(args.n)
 let latitude = args.n||args.s
 let longitude = args.w||args.e
+let tz = args.z
+
 console.log(latitude)
 console.log(longitude)
 
