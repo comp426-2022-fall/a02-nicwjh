@@ -50,5 +50,5 @@ console.log("tomorrow.")
 }
 
 if(args.h){
-console.log(data)
+process.exit(data)
 }
