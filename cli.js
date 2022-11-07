@@ -46,7 +46,7 @@ console.log(data);
 console.log(data.precipitation);
 
 if(args.j){
-console.log(data)
+console.log("Latitude must be in range")
 }
 
 const days = args.d
