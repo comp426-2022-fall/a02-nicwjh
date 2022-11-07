@@ -41,6 +41,10 @@ const data = await response.json();
 
 const days = args.d
 
+if(args.j){
+console.log(data)
+}
+
 if (days == 0){
 console.log("today.")
 } else if (days > 1) {
@@ -49,6 +53,4 @@ console.log("in" + days + "days.")
 console.log("tomorrow.")
 }
 
-if(args.h){
-process.exit(data)
-}
+
