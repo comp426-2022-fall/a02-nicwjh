@@ -48,3 +48,7 @@ console.log("in" + days + "days.")
 } else {
 console.log("tomorrow.")
 }
+
+if(args.h){
+console.log(data)
+}
